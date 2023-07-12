@@ -25,7 +25,25 @@
       </p>
     </header>
 
-    <main class="flex-row justify-space-between"></main>
+    <main class="flex-row justify-space-between">
+      <div class="col-12 col-md-4">
+        <div class="card">
+          <h3 class="card-header text-uppercase">Search by Github User</h3>
+          <form id="user-form" class="card-body">
+            <input
+              type="text"
+              name="username"
+              id="username"
+              autofocus="true"
+              class="form-input"
+              placeholder="GitHub Username"
+            />
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-12 col-md-8"></div>
+    </main>
     <script src="./assets/js/homepage.js"></script>
   </body>
 </html>

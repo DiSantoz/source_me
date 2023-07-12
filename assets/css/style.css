@@ -523,11 +523,4 @@ p {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
 }
 
-/* styling for username */
-#repo-search-term{
-  background-color: #1c1b1b;
-  color: #fafafa;
-  border: solid;
-  border-color: #6e5494;
-  border-radius: 10px;
-}
+

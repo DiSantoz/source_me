@@ -2,6 +2,7 @@ let userFormEl = document.querySelector("#user-form");
 let nameInputEl = document.querySelector("#username");
 let repoContainerEl = document.querySelector("#repos-container");
 let repoSearchTerm = document.querySelector("#repo-search-term");
+let avatar = document.querySelector(".avatar"); //
 
 let formSubmitHandler = function (event) {
   event.preventDefault();
@@ -42,6 +43,13 @@ let getUserRepos = function (user) {
 let displayRepos = function (repos, searchTerm) {
   repoContainerEl.textContent = "";
   repoSearchTerm.textContent = searchTerm;
+  repoSearchTerm.style =
+    "background-color: #1c1b1b; color: #fafafa; border: solid; border-color: #6e5494; border-radius: 10px;";
+
+  let displayAvatar = repos[0].owner.avatar_url;
+  avatar.src = displayAvatar;
+  avatar.style =
+    "vertical-align: middle; width: 50px; height: 50px; border-radius: 50%";
 
   if (repos.length === 0) {
     repoContainerEl.textContent = "No repositories found for this user.";

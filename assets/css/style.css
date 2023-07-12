@@ -113,7 +113,7 @@ p {
 }
 
 .list-group {
-  padding: 0;
+  padding: 10px;
   list-style: none;
 }
 
@@ -121,13 +121,13 @@ p {
   margin-bottom: 10px;
   padding: 1.5%;
   border-radius: var(--border-radius);
-  background-color: var(--purple);
+  background-color: var(--github);
   color: var(--primary);
   text-decoration: none;
 }
 
 .list-item:hover {
-  background-color: var(--github);
+  background-color: var(--purple);
 }
 
 .status-icon {
@@ -500,7 +500,7 @@ p {
   }
 }
 
-
+/* shake css for form */
 @keyframes shake {
   10%, 90% {
     transform: translate3d(-1px, 0, 0);
@@ -521,4 +521,13 @@ p {
 
 .apply-shake {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+}
+
+/* styling for username */
+#repo-search-term{
+  background-color: #1c1b1b;
+  color: #fafafa;
+  border: solid;
+  border-color: #6e5494;
+  border-radius: 10px;
 }

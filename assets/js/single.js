@@ -1,5 +1,17 @@
 let issueContainerEl = document.querySelector("#issues-container");
 let limitWarningEl = document.querySelector("#limit-warning");
+let repoNameEl = document.querySelector("#repo-name");
+
+let getRepoName = function () {
+  let queryString = document.location.search;
+  let repoName = queryString.split("=%20")[1];
+  if (repoName) {
+    repoNameEl.textContent = repoName;
+    getRepoIssues(repoName);
+  } else {
+    document.location.replace("./index.html");
+  }
+};
 
 let getRepoIssues = function (repo) {
   let apiUrl = "https://api.github.com/repos/" + repo + "/issues?direction=asc";
@@ -14,7 +26,8 @@ let getRepoIssues = function (repo) {
         }
       });
     } else {
-      alert("there was an error");
+      document.location.replace("./index.html");
+      console.log(apiUrl);
     }
   });
 };
@@ -59,4 +72,4 @@ let displayWarning = function (repo) {
   limitWarningEl.appendChild(linkEl);
 };
 
-getRepoIssues("facebook/react");
+getRepoName();

@@ -9,8 +9,12 @@
 - [License](#license)
 
 ## Technologies Used
-
+- GitHub API
+- Fetch API
+- HTTP Requests
+  
 ## Usage
+A simple way to search for repositories via username or by language to help contribute to open source! 
 
 ## License
 

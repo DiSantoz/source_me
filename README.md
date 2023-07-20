@@ -2,6 +2,8 @@
 
 ## Description
 
+A simple way to search for repositories via username or by a language to help contribute to open source!
+
 ## Table of Contents
 
 - [Technologies Used](#technologies-used)
@@ -9,12 +11,22 @@
 - [License](#license)
 
 ## Technologies Used
+
 - GitHub API
 - Fetch API
 - HTTP Requests
-  
+
+![image](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![image](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E) ![image](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+
 ## Usage
-A simple way to search for repositories via username or by language to help contribute to open source! 
+
+Clicking on a repository takes you to a list open issues that can then lead you directly to GitHub to clone the repo and help contribute!
+
+Check out the short video below on how to use the site and help contribute!
+
+<p>&nbsp;</p>
+
+![alt text](assets/images/how-to.gif)
 
 ## License
 
@@ -206,7 +218,7 @@ APPENDIX: How to apply the Apache License to your work.
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-Copyright [yyyy] [name of copyright owner]
+Copyright [2023] [DiSantoz]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.

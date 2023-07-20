@@ -27,7 +27,6 @@ let getUserRepos = function (user) {
       if (response.ok) {
         response.json().then(function (data) {
           displayRepos(data, user);
-          console.log(data);
         });
       } else {
         nameInputEl.placeholder = "Error: GitHub User Not Found!";
@@ -37,8 +36,6 @@ let getUserRepos = function (user) {
     .catch(function (error) {
       alert("Unable to connect to GitHub");
     });
-  // view URL
-  console.log(apiUrl);
 };
 
 let displayRepos = function (repos, searchTerm) {
@@ -112,14 +109,14 @@ let getFeaturedRepos = function (language) {
         displayRepos(data.items, language);
       });
     } else {
-      console.log("not found");
+      alert("not found");
     }
   });
 };
 
 let buttonClickHanlder = function (event) {
   let language = event.target.getAttribute("data-language");
-  console.log(language);
+
   if (language) {
     getFeaturedRepos(language);
 
